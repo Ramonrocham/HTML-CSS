@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Medias</h1>
+    <h2>Imagem dinamica</h2>
+    <p>Mude o tamanho da tela para testar imagem dinamica</p>
+
+    <picture>
+        <source media="(max-width: 730px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h2>Audio</h2>
+    <p>Reproduzindo audios</p>
+    <!--<audio src="midia/jazz.mp3" controls autoplay></audio>-->
+    <audio preload="metadata" controls>
+        <source src="midia/jazz.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

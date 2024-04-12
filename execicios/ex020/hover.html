@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        div > p{
+            display: none;
+        }
+        #txt1{
+            display:block;
+            color:black;
+        }
+        #txt1:hover{
+            color: #4a9c9c;
+        }
+        div:hover >p{
+            display: block;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        <p id="txt1">Passe o mouse aqui</p>
+        <p>Texto escondido hihihi</p>
+    </div>
+</body>
+</html>
