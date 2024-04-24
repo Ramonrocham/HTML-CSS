@@ -1,17 +1,85 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fontes/outfit/Outfit-VariableFont_wght.ttf ) format(truetype);
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(fontes/young-serif/YoungSerif-Regular.ttf) format(truetype);
+}
 body{
+    margin: 0;
+    padding: 0;
     background-color: beige;
+    font-family: 'Outfit';
 }
 main{
+    border-radius: 30px;
     background-color: #fff;;
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
 }
-div#img{
-    border-radius: 10px;
-    width: 950px;
+img{
+    display: inline;
+    border-radius: 25px;
+    max-width: 100%;
     background-image: url(img/image-omelette.jpeg);
     margin: auto;
     background-size: cover;
 
+}
+h1, h2, h3{
+    font-family: 'YoungSerif';
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    color: darkred;
+    font-size: 2.2em;
+}
+h3{
+    color: #8b003a;
+    font-size: 1.7em;
+}
+p{
+    font-size: 1.2em;
+}
+li{
+    font-size: 1.3em;
+    padding: 10px 0px;
+}
+#ppt li::marker{
+    color: #8b003a;
+}
+li::marker{
+    color: darkred;
+}
+div#ppt{
+    background-color: #ffc0cb49;
+    padding: 30px;
+    border-radius: 10px;
+}
+#ingre{
+    border-bottom: 1px solid lightgray;
+}
+ul#Instructions{
+    list-style: decimal;
+}
+table{
+    width: 100%;
+    font-size: 1.3em;
+    border-collapse: collapse;
+}
+caption{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+td{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+td.colunacor{
+    color: darkred;
 }
